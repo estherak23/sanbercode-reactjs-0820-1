@@ -101,6 +101,6 @@ buah.forEach(function(item){
 
 //no 6
 var dataFilm = []
-dataFilm.push()
+dataFilm.push(nama+":black widow"+durasi+":2 jam"+gender+":action"+tahun+":2020")
 
 
