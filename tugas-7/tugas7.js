@@ -122,7 +122,13 @@ function Clock({ template }) {
 
 class Clock {
 
-    constructor(){}
+    constructor(template){
+
+this.template=template;
+this.timer;
+
+
+    }
     
 
         render  () {
@@ -146,14 +152,16 @@ class Clock {
 
 
             
-            this.stop = function() {
-                clearInterval(timer);
-              };
+            stop ()
+            {
+                clearInterval(this.timer);
+              }
             
-              this.start = function() {
-                render();
-                timer = setInterval(render, 1000);
-              };
+              start()
+              {
+               this.render();
+              setInterval(this.render.bind(this), 1000);
+              }
     }
 
 
